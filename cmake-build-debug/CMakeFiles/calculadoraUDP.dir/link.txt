@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/calculadoraUDP.dir/main.cpp.o  -o calculadoraUDP 
