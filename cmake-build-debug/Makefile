@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-bui
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/jonasalbuquerque/clion-2020.3.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -97,6 +86,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/jonasalbuquerque/clion-2020.3.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -131,44 +131,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named calculadoraUDP
+# Target rules for targets named calculadoraUDP_lib
 
 # Build rule for target.
-calculadoraUDP: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calculadoraUDP
-.PHONY : calculadoraUDP
+calculadoraUDP_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calculadoraUDP_lib
+.PHONY : calculadoraUDP_lib
 
 # fast build rule for target.
-calculadoraUDP/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadoraUDP.dir/build.make CMakeFiles/calculadoraUDP.dir/build
-.PHONY : calculadoraUDP/fast
+calculadoraUDP_lib/fast:
+	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/build
+.PHONY : calculadoraUDP_lib/fast
 
-main.o: main.cpp.o
+#=============================================================================
+# Target rules for targets named calculadoraUDP_run
 
-.PHONY : main.o
+# Build rule for target.
+calculadoraUDP_run: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calculadoraUDP_run
+.PHONY : calculadoraUDP_run
 
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadoraUDP.dir/build.make CMakeFiles/calculadoraUDP.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadoraUDP.dir/build.make CMakeFiles/calculadoraUDP.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadoraUDP.dir/build.make CMakeFiles/calculadoraUDP.dir/main.cpp.s
-.PHONY : main.cpp.s
+# fast build rule for target.
+calculadoraUDP_run/fast:
+	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/build
+.PHONY : calculadoraUDP_run/fast
 
 # Help Target
 help:
@@ -178,10 +164,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... calculadoraUDP"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... calculadoraUDP_lib"
+	@echo "... calculadoraUDP_run"
 .PHONY : help
 
 

@@ -1,3 +1,6 @@
-/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/CMakeFiles/calculadoraUDP.dir
+/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/CMakeFiles/rebuild_cache.dir
+/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/CMakeFiles/edit_cache.dir
+/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_lib.dir
+/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_run.dir

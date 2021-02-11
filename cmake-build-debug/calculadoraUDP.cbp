@@ -5,23 +5,13 @@
 		<Option title="calculadoraUDP"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\sources\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -37,35 +27,24 @@
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="calculadoraUDP">
-				<Option output="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/calculadoraUDP" prefix_auto="0" extension_auto="0"/>
+			<Target title="edit_cache">
 				<Option working_dir="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/10"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
-					<Add directory="/usr/include/c++/10/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 calculadoraUDP"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="calculadoraUDP/fast">
-				<Option output="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/calculadoraUDP" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug"/>
+			<Target title="calculadoraUDP_lib">
+				<Option output="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/libcalculadoraUDP_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources"/>
 				<Option object_output="./"/>
-				<Option type="1"/>
+				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/headers"/>
 					<Add directory="/usr/include/c++/10"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
 					<Add directory="/usr/include/c++/10/backward"/>
@@ -75,18 +54,111 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 calculadoraUDP/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 calculadoraUDP_lib"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="calculadoraUDP_lib/fast">
+				<Option output="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/libcalculadoraUDP_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/headers"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 calculadoraUDP_lib/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="calculadoraUDP_run">
+				<Option output="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/calculadoraUDP_run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/headers"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 calculadoraUDP_run"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="calculadoraUDP_run/fast">
+				<Option output="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/calculadoraUDP_run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/headers"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 calculadoraUDP_run/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/main.cpp">
-			<Option target="calculadoraUDP"/>
+		<Unit filename="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/IcmpPacket.cpp">
+			<Option target="calculadoraUDP_lib"/>
+			<Option target="calculadoraUDP_run"/>
+		</Unit>
+		<Unit filename="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/client.cpp">
+			<Option target="calculadoraUDP_lib"/>
+			<Option target="calculadoraUDP_run"/>
+		</Unit>
+		<Unit filename="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/main.cpp">
+			<Option target="calculadoraUDP_lib"/>
+			<Option target="calculadoraUDP_run"/>
+		</Unit>
+		<Unit filename="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/server.cpp">
+			<Option target="calculadoraUDP_lib"/>
+			<Option target="calculadoraUDP_run"/>
+		</Unit>
+		<Unit filename="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/sockethandler.cpp">
+			<Option target="calculadoraUDP_lib"/>
+			<Option target="calculadoraUDP_run"/>
+		</Unit>
+		<Unit filename="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/utils.cpp">
+			<Option target="calculadoraUDP_lib"/>
+			<Option target="calculadoraUDP_run"/>
 		</Unit>
 		<Unit filename="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\sources\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

@@ -3,4 +3,6 @@ project(calculadoraUDP)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(calculadoraUDP main.cpp)
+include_directories(headers)
+
+add_subdirectory(sources)
