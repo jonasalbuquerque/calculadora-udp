@@ -77,18 +77,18 @@ include sources/CMakeFiles/calculadoraUDP_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include sources/CMakeFiles/calculadoraUDP_lib.dir/flags.make
 
-sources/CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.o: sources/CMakeFiles/calculadoraUDP_lib.dir/flags.make
-sources/CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.o: ../sources/IcmpPacket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sources/CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.o"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.o -c /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/IcmpPacket.cpp
+sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o: sources/CMakeFiles/calculadoraUDP_lib.dir/flags.make
+sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o: ../sources/UdpPacket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o"
+	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o -c /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/UdpPacket.cpp
 
-sources/CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.i"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/IcmpPacket.cpp > CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.i
+sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.i"
+	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/UdpPacket.cpp > CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.i
 
-sources/CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.s"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/IcmpPacket.cpp -o CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.s
+sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.s"
+	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/UdpPacket.cpp -o CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.s
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o: sources/CMakeFiles/calculadoraUDP_lib.dir/flags.make
 sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o: ../sources/client.cpp
@@ -157,7 +157,7 @@ sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.s: cmake_force
 
 # Object files for target calculadoraUDP_lib
 calculadoraUDP_lib_OBJECTS = \
-"CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.o" \
+"CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o" \
 "CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o" \
 "CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o" \
 "CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o" \
@@ -167,7 +167,7 @@ calculadoraUDP_lib_OBJECTS = \
 # External object files for target calculadoraUDP_lib
 calculadoraUDP_lib_EXTERNAL_OBJECTS =
 
-sources/libcalculadoraUDP_lib.a: sources/CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.o
+sources/libcalculadoraUDP_lib.a: sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o
 sources/libcalculadoraUDP_lib.a: sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o
 sources/libcalculadoraUDP_lib.a: sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o
 sources/libcalculadoraUDP_lib.a: sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o

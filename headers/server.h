@@ -16,8 +16,7 @@ public:
     void reply();
 private:
     SocketHandler socketHandler_;
-    std::shared_ptr<UdpPacket> request_;
-    UdpPacket response_;
+    std::shared_ptr<UdpPacket> packet_;
 };
 
 #endif //CALCULADORAUDP_SERVER_H

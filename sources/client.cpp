@@ -9,31 +9,17 @@ Client::Client()
 
 void Client::send()
 {
-    request_ = UdpPacket(8,
-                             0,
-                             0,
-                             getpid(),
-                             1,
-                             "Hello from client!");
-
-    request_.setChecksum(UdpPacket::computeChecksum(request_));
-
-    auto request_buffer = request_.encode();
-
+    packet_ = std::make_shared<UdpPacket> (CLIENT_PORT,SERVER_PORT,0,0,"Hello from client!");
+    packet_->setChecksum(UdpPacket::computeChecksum(packet_));
     sleep(1);
-
-    socketHandler_.send(request_buffer);
-
+    socketHandler_.send(packet_->encode());
     Client::receive();
 }
 
 void Client::receive()
 {
-    std::vector<uint8_t> reply_buffer(26,0);
-
+    std::shared_ptr<std::vector<uint8_t>> reply_buffer = std::make_shared<std::vector<uint8_t>>(26,0);
     socketHandler_.recv(reply_buffer);
-
-    response_ = UdpPacket::decode(reply_buffer);
-
-    Utils::displayInfo(response_, "ON CLIENT RESPONSE");
+    packet_ = UdpPacket::decode(reply_buffer);
+    Utils::displayInfo(packet_, "ON CLIENT ECHO_REPLY  ");
 }

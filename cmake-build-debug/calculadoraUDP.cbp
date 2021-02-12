@@ -130,7 +130,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/IcmpPacket.cpp">
+		<Unit filename="/home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/UdpPacket.cpp">
 			<Option target="calculadoraUDP_lib"/>
 			<Option target="calculadoraUDP_run"/>
 		</Unit>

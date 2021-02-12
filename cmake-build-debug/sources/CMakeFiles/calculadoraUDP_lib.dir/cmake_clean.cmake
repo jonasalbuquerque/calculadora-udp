@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.o"
+  "CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o"
   "CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o"
   "CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o"
   "CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o"

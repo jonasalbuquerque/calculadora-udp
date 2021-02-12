@@ -34,19 +34,20 @@ void SocketHandler::connect(const uint16_t &port, const std::string &ip)
     }
 }
 
-void SocketHandler::send(std::vector<uint8_t> &buf)
+void SocketHandler::send(const std::shared_ptr<std::vector<uint8_t>>& buf) const
 {
-    if (::send(socketFd_, buf.data(), buf.size(),0) < 0)
+    if (::send(socketFd_, buf->data(), buf->size(),0) < 0)
     {
         throw std::runtime_error("Send Error");
     }
 }
 
-void SocketHandler::recv(std::vector<uint8_t> &buf)
+void SocketHandler::recv(const std::shared_ptr<std::vector<uint8_t>>& buf) const
 {
-    if (::recv(socketFd_, buf.data(), buf.size(),0) < 0)
+    if (::recv(socketFd_, buf->data(), buf->size(),0) < 0)
     {
         throw std::runtime_error("Receive Error");
     }
 }
+
 

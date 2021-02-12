@@ -12,8 +12,7 @@ public:
     void receive();
 private:
     SocketHandler socketHandler_;
-    UdpPacket request_;
-    std::shared_ptr<UdpPacket> response_;
+    std::shared_ptr<UdpPacket> packet_;
 };
 
 

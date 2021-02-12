@@ -160,35 +160,35 @@ calculadoraUDP_run/fast:
 	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/build
 .PHONY : calculadoraUDP_run/fast
 
-IcmpPacket.o: IcmpPacket.cpp.o
+UdpPacket.o: UdpPacket.cpp.o
 
-.PHONY : IcmpPacket.o
+.PHONY : UdpPacket.o
 
 # target to build an object file
-IcmpPacket.cpp.o:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.o
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/IcmpPacket.cpp.o
-.PHONY : IcmpPacket.cpp.o
+UdpPacket.cpp.o:
+	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o
+	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/UdpPacket.cpp.o
+.PHONY : UdpPacket.cpp.o
 
-IcmpPacket.i: IcmpPacket.cpp.i
+UdpPacket.i: UdpPacket.cpp.i
 
-.PHONY : IcmpPacket.i
+.PHONY : UdpPacket.i
 
 # target to preprocess a source file
-IcmpPacket.cpp.i:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.i
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/IcmpPacket.cpp.i
-.PHONY : IcmpPacket.cpp.i
+UdpPacket.cpp.i:
+	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.i
+	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/UdpPacket.cpp.i
+.PHONY : UdpPacket.cpp.i
 
-IcmpPacket.s: IcmpPacket.cpp.s
+UdpPacket.s: UdpPacket.cpp.s
 
-.PHONY : IcmpPacket.s
+.PHONY : UdpPacket.s
 
 # target to generate assembly for a file
-IcmpPacket.cpp.s:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/IcmpPacket.cpp.s
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/IcmpPacket.cpp.s
-.PHONY : IcmpPacket.cpp.s
+UdpPacket.cpp.s:
+	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.s
+	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/UdpPacket.cpp.s
+.PHONY : UdpPacket.cpp.s
 
 client.o: client.cpp.o
 
@@ -350,9 +350,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... calculadoraUDP_lib"
 	@echo "... calculadoraUDP_run"
-	@echo "... IcmpPacket.o"
-	@echo "... IcmpPacket.i"
-	@echo "... IcmpPacket.s"
+	@echo "... UdpPacket.o"
+	@echo "... UdpPacket.i"
+	@echo "... UdpPacket.s"
 	@echo "... client.o"
 	@echo "... client.i"
 	@echo "... client.s"

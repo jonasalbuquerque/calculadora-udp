@@ -9,26 +9,18 @@ Server::Server()
 
 void Server::listen()
 {
-    std::vector<uint8_t> request_buffer(26,0);
-
+    std::shared_ptr<std::vector<uint8_t>> request_buffer = std::make_shared<std::vector<uint8_t>>(26,0);
     socketHandler_.recv(request_buffer);
-
-    request_ = UdpPacket::decode(request_buffer);
-
-    Utils::displayInfo(request_, "ON SERVER REQUEST");
-
+    packet_ = UdpPacket::decode(request_buffer);
+    Utils::displayInfo(packet_, "ON SERVER ECHO_REQUEST");
     Server::reply();
 }
 
 void Server::reply()
 {
-    response_ = request_.operator*();
-    response_.setType(0);
-    response_.setPayload("Hello from server!");
-
-    auto reply_buffer = response_.encode();
-
+    packet_->setSrcPort(5000);
+    packet_->setDestPort(5001);
+    packet_->setPayload("Hello from server!");
     sleep(1);
-
-    socketHandler_.send(reply_buffer);
+    socketHandler_.send(packet_->encode());
 }
