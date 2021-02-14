@@ -10,24 +10,16 @@ sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o: ../headers/sockethandler
 sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o: ../headers/utils.h
 sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o: ../sources/client.cpp
 
-sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o: ../expression_parser/constants.h
-sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o: ../expression_parser/error.h
-sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o: ../expression_parser/functions.h
-sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o: ../expression_parser/parser.h
-sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o: ../expression_parser/variablelist.h
 sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o: ../headers/UdpPacket.h
 sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o: ../headers/client.h
+sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o: ../headers/exprtk.hpp
 sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o: ../headers/server.h
 sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o: ../headers/sockethandler.h
 sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o: ../headers/utils.h
 sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o: ../sources/main.cpp
 
-sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o: ../expression_parser/constants.h
-sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o: ../expression_parser/error.h
-sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o: ../expression_parser/functions.h
-sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o: ../expression_parser/parser.h
-sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o: ../expression_parser/variablelist.h
 sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o: ../headers/UdpPacket.h
+sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o: ../headers/exprtk.hpp
 sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o: ../headers/server.h
 sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o: ../headers/sockethandler.h
 sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o: ../headers/utils.h

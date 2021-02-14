@@ -7,6 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "../CMakeLists.txt"
+  "CMakeFiles/3.17.5/CMakeCCompiler.cmake"
+  "CMakeFiles/3.17.5/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.17.5/CMakeSystem.cmake"
+  "../sources/CMakeLists.txt"
   "/home/jonasalbuquerque/Downloads/clion-2020.3.2/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCInformation.cmake"
   "/home/jonasalbuquerque/Downloads/clion-2020.3.2/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCXXInformation.cmake"
   "/home/jonasalbuquerque/Downloads/clion-2020.3.2/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -29,12 +34,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/jonasalbuquerque/Downloads/clion-2020.3.2/bin/cmake/linux/share/cmake-3.17/Modules/Platform/Linux.cmake"
   "/home/jonasalbuquerque/Downloads/clion-2020.3.2/bin/cmake/linux/share/cmake-3.17/Modules/Platform/UnixPaths.cmake"
   "/home/jonasalbuquerque/Downloads/clion-2020.3.2/bin/cmake/linux/share/cmake-3.17/Modules/ProcessorCount.cmake"
-  "../CMakeLists.txt"
-  "CMakeFiles/3.17.5/CMakeCCompiler.cmake"
-  "CMakeFiles/3.17.5/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.17.5/CMakeSystem.cmake"
-  "../expression_parser/CMakeLists.txt"
-  "../sources/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -47,12 +46,10 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "sources/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "expression_parser/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "sources/CMakeFiles/calculadoraUDP_lib.dir/DependInfo.cmake"
   "sources/CMakeFiles/calculadoraUDP_run.dir/DependInfo.cmake"
-  "expression_parser/CMakeFiles/calculadoraUDP_parser.dir/DependInfo.cmake"
   )

@@ -68,10 +68,10 @@ RM = /home/jonasalbuquerque/Downloads/clion-2020.3.2/bin/cmake/linux/bin/cmake -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/CLionProjects/calculadora-udp
+CMAKE_SOURCE_DIR = /home/jonasalbuquerque/CLionProjects/calculadora-udp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/CLionProjects/calculadora-udp/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jonasalbuquerque/CLionProjects/calculadora-udp/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles /root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonasalbuquerque/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles /home/jonasalbuquerque/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonasalbuquerque/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -156,19 +156,6 @@ calculadoraUDP_run/fast:
 	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/build
 .PHONY : calculadoraUDP_run/fast
 
-#=============================================================================
-# Target rules for targets named calculadoraUDP_parser
-
-# Build rule for target.
-calculadoraUDP_parser: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calculadoraUDP_parser
-.PHONY : calculadoraUDP_parser
-
-# fast build rule for target.
-calculadoraUDP_parser/fast:
-	$(MAKE) $(MAKESILENT) -f expression_parser/CMakeFiles/calculadoraUDP_parser.dir/build.make expression_parser/CMakeFiles/calculadoraUDP_parser.dir/build
-.PHONY : calculadoraUDP_parser/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -178,7 +165,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... calculadoraUDP_lib"
-	@echo "... calculadoraUDP_parser"
 	@echo "... calculadoraUDP_run"
 .PHONY : help
 

@@ -7,6 +7,7 @@
 
 #include "UdpPacket.h"
 #include "sockethandler.h"
+#include "exprtk.hpp"
 #include "utils.h"
 
 class Server {

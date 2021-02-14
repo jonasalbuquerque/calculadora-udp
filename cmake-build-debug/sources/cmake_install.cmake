@@ -1,4 +1,4 @@
-# Install script for directory: /root/CLionProjects/calculadora-udp/sources
+# Install script for directory: /home/jonasalbuquerque/CLionProjects/calculadora-udp/sources
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

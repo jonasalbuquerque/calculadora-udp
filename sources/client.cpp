@@ -9,11 +9,21 @@ Client::Client()
 
 void Client::send()
 {
-    packet_ = std::make_shared<UdpPacket> (CLIENT_PORT,SERVER_PORT,0,0,"1+2");
-    packet_->setChecksum(UdpPacket::computeChecksum(packet_));
-    sleep(1);
-    socketHandler_.send(packet_->encode());
-    Client::receive();
+    packet_ = std::make_shared<UdpPacket> ();
+    packet_->setSrcPort(CLIENT_PORT);
+    packet_->setDestPort(SERVER_PORT);
+    while(true)
+    {
+        std::string operation;
+        std::cout << "Insert an operation to be calculated: ";
+        getline (std::cin, operation);
+        packet_->setPayload(operation);
+        packet_->setLength(8 + packet_->getPayload().size());
+        packet_->setChecksum(UdpPacket::computeChecksum(packet_));
+        sleep(1);
+        socketHandler_.send(packet_->encode());
+        Client::receive();
+    }
 }
 
 void Client::receive()

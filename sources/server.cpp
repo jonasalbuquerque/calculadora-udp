@@ -21,8 +21,11 @@ void Server::reply()
     packet_->setSrcPort(5000);
     packet_->setDestPort(5001);
     Server::parsePayload();
+    packet_->setLength(8+packet_->getPayload().size());
+    packet_->setChecksum(UdpPacket::computeChecksum(packet_));
     sleep(1);
     socketHandler_.send(packet_->encode());
+    Server::listen();
 }
 
 void Server::parsePayload()

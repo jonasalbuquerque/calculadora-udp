@@ -1,4 +1,4 @@
-# Install script for directory: /root/CLionProjects/calculadora-udp
+# Install script for directory: /home/jonasalbuquerque/CLionProjects/calculadora-udp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/root/CLionProjects/calculadora-udp/cmake-build-debug/sources/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/root/CLionProjects/calculadora-udp/cmake-build-debug/expression_parser/cmake_install.cmake")
+  include("/home/jonasalbuquerque/CLionProjects/calculadora-udp/cmake-build-debug/sources/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/CLionProjects/calculadora-udp/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jonasalbuquerque/CLionProjects/calculadora-udp/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

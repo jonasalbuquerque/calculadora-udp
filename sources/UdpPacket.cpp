@@ -44,8 +44,8 @@ std::shared_ptr<UdpPacket> UdpPacket::decode(const std::shared_ptr<std::vector<u
     pckt->setChecksum((inputPacket->at(6) << 8) + inputPacket->at(7));
 
     std::string payload_msg;
-    for (auto i = inputPacket->begin()+8; i != inputPacket->end(); ++i){
-        payload_msg.push_back(*i);
+    for (int i = 8; i < pckt->getLength(); ++i){
+        payload_msg.push_back(inputPacket->at(i));
     }
     pckt->setPayload(payload_msg);
     return pckt;

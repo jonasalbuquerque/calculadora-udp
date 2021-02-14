@@ -64,49 +64,28 @@ RM = /home/jonasalbuquerque/Downloads/clion-2020.3.2/bin/cmake/linux/bin/cmake -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/CLionProjects/calculadora-udp
+CMAKE_SOURCE_DIR = /home/jonasalbuquerque/CLionProjects/calculadora-udp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/CLionProjects/calculadora-udp/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jonasalbuquerque/CLionProjects/calculadora-udp/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: sources/all
-all: expression_parser/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: sources/preinstall
-preinstall: expression_parser/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: sources/clean
-clean: expression_parser/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory expression_parser
-
-# Recursive "all" directory target.
-expression_parser/all: expression_parser/CMakeFiles/calculadoraUDP_parser.dir/all
-
-.PHONY : expression_parser/all
-
-# Recursive "preinstall" directory target.
-expression_parser/preinstall:
-
-.PHONY : expression_parser/preinstall
-
-# Recursive "clean" directory target.
-expression_parser/clean: expression_parser/CMakeFiles/calculadoraUDP_parser.dir/clean
-
-.PHONY : expression_parser/clean
 
 #=============================================================================
 # Directory level rules for directory sources
@@ -135,14 +114,14 @@ sources/clean: sources/CMakeFiles/calculadoraUDP_run.dir/clean
 sources/CMakeFiles/calculadoraUDP_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target calculadoraUDP_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jonasalbuquerque/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target calculadoraUDP_lib"
 .PHONY : sources/CMakeFiles/calculadoraUDP_lib.dir/all
 
 # Build rule for subdir invocation for target.
 sources/CMakeFiles/calculadoraUDP_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonasalbuquerque/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/CMakeFiles/calculadoraUDP_lib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonasalbuquerque/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles 0
 .PHONY : sources/CMakeFiles/calculadoraUDP_lib.dir/rule
 
 # Convenience name for target.
@@ -162,14 +141,14 @@ sources/CMakeFiles/calculadoraUDP_lib.dir/clean:
 sources/CMakeFiles/calculadoraUDP_run.dir/all:
 	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/depend
 	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles --progress-num=14,15,16,17,18,19,20 "Built target calculadoraUDP_run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jonasalbuquerque/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles --progress-num=8,9,10,11,12,13,14 "Built target calculadoraUDP_run"
 .PHONY : sources/CMakeFiles/calculadoraUDP_run.dir/all
 
 # Build rule for subdir invocation for target.
 sources/CMakeFiles/calculadoraUDP_run.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonasalbuquerque/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/CMakeFiles/calculadoraUDP_run.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonasalbuquerque/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles 0
 .PHONY : sources/CMakeFiles/calculadoraUDP_run.dir/rule
 
 # Convenience name for target.
@@ -181,33 +160,6 @@ calculadoraUDP_run: sources/CMakeFiles/calculadoraUDP_run.dir/rule
 sources/CMakeFiles/calculadoraUDP_run.dir/clean:
 	$(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/clean
 .PHONY : sources/CMakeFiles/calculadoraUDP_run.dir/clean
-
-#=============================================================================
-# Target rules for target expression_parser/CMakeFiles/calculadoraUDP_parser.dir
-
-# All Build rule for target.
-expression_parser/CMakeFiles/calculadoraUDP_parser.dir/all:
-	$(MAKE) $(MAKESILENT) -f expression_parser/CMakeFiles/calculadoraUDP_parser.dir/build.make expression_parser/CMakeFiles/calculadoraUDP_parser.dir/depend
-	$(MAKE) $(MAKESILENT) -f expression_parser/CMakeFiles/calculadoraUDP_parser.dir/build.make expression_parser/CMakeFiles/calculadoraUDP_parser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles --progress-num=8,9,10,11,12,13 "Built target calculadoraUDP_parser"
-.PHONY : expression_parser/CMakeFiles/calculadoraUDP_parser.dir/all
-
-# Build rule for subdir invocation for target.
-expression_parser/CMakeFiles/calculadoraUDP_parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 expression_parser/CMakeFiles/calculadoraUDP_parser.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles 0
-.PHONY : expression_parser/CMakeFiles/calculadoraUDP_parser.dir/rule
-
-# Convenience name for target.
-calculadoraUDP_parser: expression_parser/CMakeFiles/calculadoraUDP_parser.dir/rule
-
-.PHONY : calculadoraUDP_parser
-
-# clean rule for target.
-expression_parser/CMakeFiles/calculadoraUDP_parser.dir/clean:
-	$(MAKE) $(MAKESILENT) -f expression_parser/CMakeFiles/calculadoraUDP_parser.dir/build.make expression_parser/CMakeFiles/calculadoraUDP_parser.dir/clean
-.PHONY : expression_parser/CMakeFiles/calculadoraUDP_parser.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
