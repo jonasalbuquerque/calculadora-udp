@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/UdpPacket.cpp" "/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o"
-  "/home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/client.cpp" "/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o"
-  "/home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/main.cpp" "/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o"
-  "/home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/server.cpp" "/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o"
-  "/home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/sockethandler.cpp" "/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.o"
-  "/home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/utils.cpp" "/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.o"
+  "/root/CLionProjects/calculadora-udp/sources/UdpPacket.cpp" "/root/CLionProjects/calculadora-udp/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o"
+  "/root/CLionProjects/calculadora-udp/sources/client.cpp" "/root/CLionProjects/calculadora-udp/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o"
+  "/root/CLionProjects/calculadora-udp/sources/main.cpp" "/root/CLionProjects/calculadora-udp/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o"
+  "/root/CLionProjects/calculadora-udp/sources/server.cpp" "/root/CLionProjects/calculadora-udp/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o"
+  "/root/CLionProjects/calculadora-udp/sources/sockethandler.cpp" "/root/CLionProjects/calculadora-udp/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.o"
+  "/root/CLionProjects/calculadora-udp/sources/utils.cpp" "/root/CLionProjects/calculadora-udp/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

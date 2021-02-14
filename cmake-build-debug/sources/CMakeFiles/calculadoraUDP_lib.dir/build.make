@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/jonasalbuquerque/clion-2020.3.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/jonasalbuquerque/Downloads/clion-2020.3.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/jonasalbuquerque/clion-2020.3.1/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/jonasalbuquerque/Downloads/clion-2020.3.2/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jonasalbuquerque/CLionProjects/calculadoraUDP
+CMAKE_SOURCE_DIR = /root/CLionProjects/calculadora-udp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug
+CMAKE_BINARY_DIR = /root/CLionProjects/calculadora-udp/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include sources/CMakeFiles/calculadoraUDP_lib.dir/depend.make
@@ -79,81 +79,81 @@ include sources/CMakeFiles/calculadoraUDP_lib.dir/flags.make
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o: sources/CMakeFiles/calculadoraUDP_lib.dir/flags.make
 sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o: ../sources/UdpPacket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o -c /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/UdpPacket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o"
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o -c /root/CLionProjects/calculadora-udp/sources/UdpPacket.cpp
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.i"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/UdpPacket.cpp > CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/CLionProjects/calculadora-udp/sources/UdpPacket.cpp > CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.i
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.s"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/UdpPacket.cpp -o CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/CLionProjects/calculadora-udp/sources/UdpPacket.cpp -o CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.s
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o: sources/CMakeFiles/calculadoraUDP_lib.dir/flags.make
 sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o: ../sources/client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o -c /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o"
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o -c /root/CLionProjects/calculadora-udp/sources/client.cpp
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calculadoraUDP_lib.dir/client.cpp.i"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/client.cpp > CMakeFiles/calculadoraUDP_lib.dir/client.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/CLionProjects/calculadora-udp/sources/client.cpp > CMakeFiles/calculadoraUDP_lib.dir/client.cpp.i
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculadoraUDP_lib.dir/client.cpp.s"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/client.cpp -o CMakeFiles/calculadoraUDP_lib.dir/client.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/CLionProjects/calculadora-udp/sources/client.cpp -o CMakeFiles/calculadoraUDP_lib.dir/client.cpp.s
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o: sources/CMakeFiles/calculadoraUDP_lib.dir/flags.make
 sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o: ../sources/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o -c /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o"
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o -c /root/CLionProjects/calculadora-udp/sources/main.cpp
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calculadoraUDP_lib.dir/main.cpp.i"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/main.cpp > CMakeFiles/calculadoraUDP_lib.dir/main.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/CLionProjects/calculadora-udp/sources/main.cpp > CMakeFiles/calculadoraUDP_lib.dir/main.cpp.i
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculadoraUDP_lib.dir/main.cpp.s"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/main.cpp -o CMakeFiles/calculadoraUDP_lib.dir/main.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/CLionProjects/calculadora-udp/sources/main.cpp -o CMakeFiles/calculadoraUDP_lib.dir/main.cpp.s
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o: sources/CMakeFiles/calculadoraUDP_lib.dir/flags.make
 sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o: ../sources/server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o -c /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o"
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o -c /root/CLionProjects/calculadora-udp/sources/server.cpp
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calculadoraUDP_lib.dir/server.cpp.i"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/server.cpp > CMakeFiles/calculadoraUDP_lib.dir/server.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/CLionProjects/calculadora-udp/sources/server.cpp > CMakeFiles/calculadoraUDP_lib.dir/server.cpp.i
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculadoraUDP_lib.dir/server.cpp.s"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/server.cpp -o CMakeFiles/calculadoraUDP_lib.dir/server.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/CLionProjects/calculadora-udp/sources/server.cpp -o CMakeFiles/calculadoraUDP_lib.dir/server.cpp.s
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.o: sources/CMakeFiles/calculadoraUDP_lib.dir/flags.make
 sources/CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.o: ../sources/sockethandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sources/CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.o"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.o -c /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/sockethandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sources/CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.o"
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.o -c /root/CLionProjects/calculadora-udp/sources/sockethandler.cpp
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.i"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/sockethandler.cpp > CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/CLionProjects/calculadora-udp/sources/sockethandler.cpp > CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.i
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.s"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/sockethandler.cpp -o CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/CLionProjects/calculadora-udp/sources/sockethandler.cpp -o CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.s
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.o: sources/CMakeFiles/calculadoraUDP_lib.dir/flags.make
 sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.o: ../sources/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.o"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.o -c /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.o"
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.o -c /root/CLionProjects/calculadora-udp/sources/utils.cpp
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.i"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/utils.cpp > CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/CLionProjects/calculadora-udp/sources/utils.cpp > CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.i
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.s"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources/utils.cpp -o CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/CLionProjects/calculadora-udp/sources/utils.cpp -o CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.s
 
 # Object files for target calculadoraUDP_lib
 calculadoraUDP_lib_OBJECTS = \
@@ -175,9 +175,9 @@ sources/libcalculadoraUDP_lib.a: sources/CMakeFiles/calculadoraUDP_lib.dir/socke
 sources/libcalculadoraUDP_lib.a: sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.o
 sources/libcalculadoraUDP_lib.a: sources/CMakeFiles/calculadoraUDP_lib.dir/build.make
 sources/libcalculadoraUDP_lib.a: sources/CMakeFiles/calculadoraUDP_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libcalculadoraUDP_lib.a"
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && $(CMAKE_COMMAND) -P CMakeFiles/calculadoraUDP_lib.dir/cmake_clean_target.cmake
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/calculadoraUDP_lib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libcalculadoraUDP_lib.a"
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && $(CMAKE_COMMAND) -P CMakeFiles/calculadoraUDP_lib.dir/cmake_clean_target.cmake
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/calculadoraUDP_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 sources/CMakeFiles/calculadoraUDP_lib.dir/build: sources/libcalculadoraUDP_lib.a
@@ -185,10 +185,10 @@ sources/CMakeFiles/calculadoraUDP_lib.dir/build: sources/libcalculadoraUDP_lib.a
 .PHONY : sources/CMakeFiles/calculadoraUDP_lib.dir/build
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/clean:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources && $(CMAKE_COMMAND) -P CMakeFiles/calculadoraUDP_lib.dir/cmake_clean.cmake
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug/sources && $(CMAKE_COMMAND) -P CMakeFiles/calculadoraUDP_lib.dir/cmake_clean.cmake
 .PHONY : sources/CMakeFiles/calculadoraUDP_lib.dir/clean
 
 sources/CMakeFiles/calculadoraUDP_lib.dir/depend:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jonasalbuquerque/CLionProjects/calculadoraUDP /home/jonasalbuquerque/CLionProjects/calculadoraUDP/sources /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/CLionProjects/calculadora-udp /root/CLionProjects/calculadora-udp/sources /root/CLionProjects/calculadora-udp/cmake-build-debug /root/CLionProjects/calculadora-udp/cmake-build-debug/sources /root/CLionProjects/calculadora-udp/cmake-build-debug/sources/CMakeFiles/calculadoraUDP_lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sources/CMakeFiles/calculadoraUDP_lib.dir/depend
 

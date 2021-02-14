@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/jonasalbuquerque/clion-2020.3.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/jonasalbuquerque/Downloads/clion-2020.3.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/jonasalbuquerque/clion-2020.3.1/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/jonasalbuquerque/Downloads/clion-2020.3.2/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jonasalbuquerque/CLionProjects/calculadoraUDP
+CMAKE_SOURCE_DIR = /root/CLionProjects/calculadora-udp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug
+CMAKE_BINARY_DIR = /root/CLionProjects/calculadora-udp/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-bui
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/jonasalbuquerque/clion-2020.3.1/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/jonasalbuquerque/Downloads/clion-2020.3.2/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/jonasalbuquerque/clion-2020.3.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/jonasalbuquerque/Downloads/clion-2020.3.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,14 +100,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/CMakeFiles /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/sources/CMakeFiles/progress.marks
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug/CMakeFiles 0
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles /root/CLionProjects/calculadora-udp/cmake-build-debug/sources/CMakeFiles/progress.marks
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/clean
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/clean
 .PHONY : clean
 
 # The main clean target
@@ -117,22 +117,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/preinstall
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/preinstall
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 sources/CMakeFiles/calculadoraUDP_lib.dir/rule:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/CMakeFiles/calculadoraUDP_lib.dir/rule
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/CMakeFiles/calculadoraUDP_lib.dir/rule
 .PHONY : sources/CMakeFiles/calculadoraUDP_lib.dir/rule
 
 # Convenience name for target.
@@ -142,12 +142,12 @@ calculadoraUDP_lib: sources/CMakeFiles/calculadoraUDP_lib.dir/rule
 
 # fast build rule for target.
 calculadoraUDP_lib/fast:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/build
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/build
 .PHONY : calculadoraUDP_lib/fast
 
 # Convenience name for target.
 sources/CMakeFiles/calculadoraUDP_run.dir/rule:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/CMakeFiles/calculadoraUDP_run.dir/rule
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sources/CMakeFiles/calculadoraUDP_run.dir/rule
 .PHONY : sources/CMakeFiles/calculadoraUDP_run.dir/rule
 
 # Convenience name for target.
@@ -157,7 +157,7 @@ calculadoraUDP_run: sources/CMakeFiles/calculadoraUDP_run.dir/rule
 
 # fast build rule for target.
 calculadoraUDP_run/fast:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/build
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/build
 .PHONY : calculadoraUDP_run/fast
 
 UdpPacket.o: UdpPacket.cpp.o
@@ -166,8 +166,8 @@ UdpPacket.o: UdpPacket.cpp.o
 
 # target to build an object file
 UdpPacket.cpp.o:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/UdpPacket.cpp.o
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.o
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/UdpPacket.cpp.o
 .PHONY : UdpPacket.cpp.o
 
 UdpPacket.i: UdpPacket.cpp.i
@@ -176,8 +176,8 @@ UdpPacket.i: UdpPacket.cpp.i
 
 # target to preprocess a source file
 UdpPacket.cpp.i:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.i
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/UdpPacket.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/UdpPacket.cpp.i
 .PHONY : UdpPacket.cpp.i
 
 UdpPacket.s: UdpPacket.cpp.s
@@ -186,8 +186,8 @@ UdpPacket.s: UdpPacket.cpp.s
 
 # target to generate assembly for a file
 UdpPacket.cpp.s:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.s
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/UdpPacket.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/UdpPacket.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/UdpPacket.cpp.s
 .PHONY : UdpPacket.cpp.s
 
 client.o: client.cpp.o
@@ -196,8 +196,8 @@ client.o: client.cpp.o
 
 # target to build an object file
 client.cpp.o:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/client.cpp.o
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.o
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/client.cpp.o
 .PHONY : client.cpp.o
 
 client.i: client.cpp.i
@@ -206,8 +206,8 @@ client.i: client.cpp.i
 
 # target to preprocess a source file
 client.cpp.i:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.i
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/client.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/client.cpp.i
 .PHONY : client.cpp.i
 
 client.s: client.cpp.s
@@ -216,8 +216,8 @@ client.s: client.cpp.s
 
 # target to generate assembly for a file
 client.cpp.s:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.s
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/client.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/client.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/client.cpp.s
 .PHONY : client.cpp.s
 
 main.o: main.cpp.o
@@ -226,8 +226,8 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/main.cpp.o
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.o
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -236,8 +236,8 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.i
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/main.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -246,8 +246,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.s
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/main.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/main.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 server.o: server.cpp.o
@@ -256,8 +256,8 @@ server.o: server.cpp.o
 
 # target to build an object file
 server.cpp.o:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/server.cpp.o
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.o
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/server.cpp.o
 .PHONY : server.cpp.o
 
 server.i: server.cpp.i
@@ -266,8 +266,8 @@ server.i: server.cpp.i
 
 # target to preprocess a source file
 server.cpp.i:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.i
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/server.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/server.cpp.i
 .PHONY : server.cpp.i
 
 server.s: server.cpp.s
@@ -276,8 +276,8 @@ server.s: server.cpp.s
 
 # target to generate assembly for a file
 server.cpp.s:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.s
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/server.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/server.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/server.cpp.s
 .PHONY : server.cpp.s
 
 sockethandler.o: sockethandler.cpp.o
@@ -286,8 +286,8 @@ sockethandler.o: sockethandler.cpp.o
 
 # target to build an object file
 sockethandler.cpp.o:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.o
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/sockethandler.cpp.o
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.o
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/sockethandler.cpp.o
 .PHONY : sockethandler.cpp.o
 
 sockethandler.i: sockethandler.cpp.i
@@ -296,8 +296,8 @@ sockethandler.i: sockethandler.cpp.i
 
 # target to preprocess a source file
 sockethandler.cpp.i:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.i
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/sockethandler.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/sockethandler.cpp.i
 .PHONY : sockethandler.cpp.i
 
 sockethandler.s: sockethandler.cpp.s
@@ -306,8 +306,8 @@ sockethandler.s: sockethandler.cpp.s
 
 # target to generate assembly for a file
 sockethandler.cpp.s:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.s
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/sockethandler.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/sockethandler.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/sockethandler.cpp.s
 .PHONY : sockethandler.cpp.s
 
 utils.o: utils.cpp.o
@@ -316,8 +316,8 @@ utils.o: utils.cpp.o
 
 # target to build an object file
 utils.cpp.o:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.o
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/utils.cpp.o
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.o
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/utils.cpp.o
 .PHONY : utils.cpp.o
 
 utils.i: utils.cpp.i
@@ -326,8 +326,8 @@ utils.i: utils.cpp.i
 
 # target to preprocess a source file
 utils.cpp.i:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.i
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/utils.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.i
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/utils.cpp.i
 .PHONY : utils.cpp.i
 
 utils.s: utils.cpp.s
@@ -336,8 +336,8 @@ utils.s: utils.cpp.s
 
 # target to generate assembly for a file
 utils.cpp.s:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.s
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/utils.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_lib.dir/build.make sources/CMakeFiles/calculadoraUDP_lib.dir/utils.cpp.s
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(MAKE) $(MAKESILENT) -f sources/CMakeFiles/calculadoraUDP_run.dir/build.make sources/CMakeFiles/calculadoraUDP_run.dir/utils.cpp.s
 .PHONY : utils.cpp.s
 
 # Help Target
@@ -379,6 +379,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/CLionProjects/calculadora-udp/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

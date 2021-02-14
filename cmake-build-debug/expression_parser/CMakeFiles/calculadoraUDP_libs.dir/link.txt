@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcalculadoraUDP_libs.a  CMakeFiles/calculadoraUDP_libs.dir/error.cpp.o CMakeFiles/calculadoraUDP_libs.dir/functions.cpp.o CMakeFiles/calculadoraUDP_libs.dir/main.cpp.o CMakeFiles/calculadoraUDP_libs.dir/parser.cpp.o CMakeFiles/calculadoraUDP_libs.dir/variablelist.cpp.o
+/usr/bin/ranlib libcalculadoraUDP_libs.a

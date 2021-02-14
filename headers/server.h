@@ -14,6 +14,7 @@ public:
     Server();
     void listen();
     void reply();
+    void parsePayload();
 private:
     SocketHandler socketHandler_;
     std::shared_ptr<UdpPacket> packet_;

@@ -1,4 +1,8 @@
-/home/jonasalbuquerque/clion-2020.3.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jonasalbuquerque/CLionProjects/calculadoraUDP
--- Configuring done
--- Generating done
--- Build files have been written to: /home/jonasalbuquerque/CLionProjects/calculadoraUDP/cmake-build-debug
+/home/jonasalbuquerque/Downloads/clion-2020.3.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /root/CLionProjects/calculadora-udp
+CMake Error at CMakeLists.txt:9 (add_subdirectory):
+  add_subdirectory given source "expression_parser" which is not an existing
+  directory.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/root/CLionProjects/calculadora-udp/cmake-build-debug/CMakeFiles/CMakeOutput.log".

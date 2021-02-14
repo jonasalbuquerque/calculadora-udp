@@ -6,5 +6,5 @@ CXX_FLAGS = -pthread -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jonasalbuquerque/CLionProjects/calculadoraUDP/headers 
+CXX_INCLUDES = -I/root/CLionProjects/calculadora-udp/headers 
 
