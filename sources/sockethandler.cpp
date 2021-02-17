@@ -2,6 +2,7 @@
 
 void SocketHandler::openSocket()
 {
+    //AF_INET: domain (IPv4); SOCK_DGRAM: type (UDP); IPPROTO_IP: ip protocol (value 0)
     if((socketFd_ = ::socket(AF_INET, SOCK_DGRAM, 0)) <= 0)
     {
         throw std::runtime_error("Socket Error");

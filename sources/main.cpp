@@ -7,8 +7,8 @@ void start_server()
 {
     try
     {
-        Server g_server;
-        g_server.listen();
+        Server server;
+        server.listen();
     }
     catch (const std::exception& e)
     {
@@ -22,8 +22,8 @@ void start_client()
 {
     try
     {
-        Client g_client;
-        g_client.send();
+        Client client;
+        client.send();
     }
     catch (const std::exception& e)
     {
